@@ -1,24 +1,28 @@
 body {
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 #calculator {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     width: 300px;
+    background-color:  hsl(180, 5%, 8%);
     border-radius: 15px;
     justify-content: center;
     align-items: center;
 }
 #display input{
     width: 280px;
-    padding: 10px;
     padding-top: 50px;
     border: none;
+
     background-color:  hsl(180, 5%, 8%) ;
     color: white;
     display: inline-flex ;
     font-size: xx-large;
     text-align: right;
-    
     
 }
 #buttons {
