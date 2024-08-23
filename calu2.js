@@ -4,6 +4,50 @@ const btnSawasawa = document.getElementById('sawasawa');
 const kitufe = document.querySelectorAll('.kitufe');
 console.log(kitufe);
 
+const operate = document.querySelectorAll('.operator');
+console.log(operate);
+operate.forEach(function (operate){
+    console.log(operate);
+    console.log(operate.attributes.value.value);
+    operate.addEventListener('click', function() {
+        const opvalue = operate.attributes.value.value;
+        if (opvalue==='+' || opvalue==='-'|| opvalue==='*' || opvalue==='/') {
+           display.value += opvalue;
+           /* let saveNum = '';
+            let current ='';
+            let op = '';
+
+            function number(kitufeValue) {
+                current +=kitufeValue;
+            }
+            function symbols(opvalue) {
+                if (current==='') {
+                    return;
+                }else {
+                    current=saveNum;
+                    opvalue = op;
+                    current = '';
+                    updateDisplay(op);
+                }
+            }*/
+        }else if(opvalue==='AC') {
+            display.value= '';
+        }else if(opvalue==='C') {
+            display.value=display.value.toString().slice(0, -1);
+        } else if(opvalue==='.') {
+            display.value+= opvalue;
+        } else{
+            try {
+
+                display.value= eval(display.value);
+            }
+            catch(Error) {
+                display.value= 'Syntax Error';
+            }
+        }
+    });
+});
+
 kitufe.forEach(function (kitufe) {
     console.log(kitufe);
     console.log(kitufe.attributes.value.value);
