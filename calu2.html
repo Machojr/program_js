@@ -11,27 +11,29 @@
         <div id="display">
             <input type="text" name="display" readonly>
         </div>
-        <div id="buttons">
+        <div id="keys">
+            <input type="button" onclick="button()" value="+" class="operator">
+            <input type="button" onclick="button()" value="7">
+            <input type="button" onclick="button()" value="8">
+            <input type="button" onclick="button()" value="9">
+            <input type="button" onclick="button()" value="-"class="operator"> 
+            <input type="button" onclick="button()" value="4">
+            <input type="button" onclick="button()" value="5">
+            <input type="button" onclick="button()" value="6">
+            <input type="button" onclick="button()" value="*" class="operator">
+            <input type="button" onclick="button()" value="1">
+            <input type="button" onclick="button()" value="2">
+            <input type="button" onclick="button()" value="3">
+            <input type="button" onclick="button()" value="/" class="operator">
+            <input type="button" onclick="button()" value="0">
+            <input type="button" onclick="button()" value="00">
+            <input type="button" onclick="button()" value="000">
+            <input type="button" onclick="button()" value="DE"class="operator">
+            <input type="button" onclick="button()" value="AC"class="operator">
+            <input type="button" onclick="button()" value="."class="operator">
+            <input type="button" onclick="button()" value="="class="operator">
            
-            <button type="button" value="+" class="operator" onclick="display.value ='+'">+</button>
-            <button type="button" value="7" onclick="display.value =7">7</button>
-            <button type="button" value="8" onclick="display.value =8">8</button>
-            <button type="button" value="" onclick="display.value =9">9</button>
-            <button type="button" value="-" class="operator" onclick="display.value ='-'">-</button>
-            <button type="button" value="4" onclick="display.value =4">4</button>
-            <button type="button" value="5" onclick="display.value +=5">5</button>
-            <button type="button" value="6" onclick="display.value =6">6</button>
-            <button type="button" value="*" class="operator" onclick="display.value ='*'">*</button>
-            <button type="button" value="1" onclick="button()">1</button>
-            <button type="button" value="2" onclick="display.value =2">2</button>
-            <button type="button" value="3" onclick="display.value =3">3</button>
-            <button type="button" value="/" class="operator" onclick="display.value ='/'">/</button>
-            <button type="button" value="0" onclick="display.value =0">0</button>
-            <button type="button" value="00" onclick="display.value ='00'">00</button>
-            <button type="button" value="DE" class="operator" onclick="display.value = back()">DE</button>
-            <button type="button" value="AC" class="operator" onclick="display.value = clear()">AC</button>
-            <button type="button" value="." class="operator" onclick="display.value ='.'">.</button>
-            <button type="button" value="=" class="operator" onclick="display.value = solve(display.value)">=</button>        </div>
+                  </div>
     </div>
     <script src="./calu2.js"></script>
 </body>
