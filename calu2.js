@@ -1,3 +1,4 @@
+
 const display = document.getElementById('displayScreen');
 const btnSawasawa = document.getElementById('sawasawa');
 
@@ -6,6 +7,8 @@ let nambaYamwanzo = 0;
 let tendo = '';
 let hesabu = '';
 console.log(kitufe);
+
+
 
 kitufe.forEach(function (kitufe) {
     console.log(kitufe);
@@ -29,3 +32,4 @@ kitufe.forEach(function (kitufe) {
         }
     });
 });
+
