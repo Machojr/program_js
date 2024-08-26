@@ -11,9 +11,12 @@ kitufe.forEach(function (kitufe) {
     console.log(kitufe.attributes.value.value);
     kitufe.addEventListener('click', function () {
         const kitufeValue = kitufe.attributes.value.value;
-        if (kitufeValue === 'C' || kitufeValue === 'AC') {
+        if (kitufeValue === 'AC') {
             display.value = '';
-        } else if (kitufeValue === '=') {
+        } else if(kitufeValue === 'C') {
+            display.value= display.value.toString().slice(0, -1);
+        } 
+        else if (kitufeValue === '=') {
             calculate = (`${temporary}${operator}${display.value}`);
             display.value = eval(calculate);
         }else if(kitufeValue==='*' || kitufeValue==='+'|| kitufeValue==='/' || kitufeValue==='-'){
