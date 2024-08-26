@@ -54,6 +54,6 @@ button:hover {
 button:active{
     background-color:  hsl(240, 17%, 50%);
 }
-button.operator {
+.kitufe.operator{
     background-color: blue;
 }
